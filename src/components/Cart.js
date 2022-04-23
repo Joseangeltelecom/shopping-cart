@@ -1,10 +1,10 @@
-import React from "react"
-import { Link, useHistory } from "react-router-dom"
-import CartDetails from "./CartDetails"
-import "../App.css"
+import React from "react";
+import { Link, useHistory } from "react-router-dom";
+import CartDetails from "./CartDetails";
+import "../App.css";
 
 function Cart({ items, deleteCartItem, changeQty }) {
-  const { goBack } = useHistory()
+  const { goBack } = useHistory();
   const cartItems = items.map((item) => (
     <CartDetails
       key={item.id}
@@ -12,12 +12,12 @@ function Cart({ items, deleteCartItem, changeQty }) {
       deleteCartItem={deleteCartItem}
       changeQty={changeQty}
     />
-  ))
+  ));
 
   const cartTotal = items
     .map((item) => item.price * item.qty)
     .reduce((a, c) => a + c, 0)
-    .toFixed(2)
+    .toFixed(2);
 
   return (
     <div className="containerMayor">
@@ -51,7 +51,7 @@ function Cart({ items, deleteCartItem, changeQty }) {
         </div>
       )}
     </div>
-  )
+  );
 }
 
-export default Cart
+export default Cart;

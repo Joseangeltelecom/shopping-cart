@@ -243,3 +243,15 @@ nav :link {
 .black-text a {
   color: black;
 }
+
+.shopping-cart-counter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.coming-soon-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

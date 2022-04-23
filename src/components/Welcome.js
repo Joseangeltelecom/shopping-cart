@@ -1,10 +1,12 @@
-import React from "react"
-import "../App.css"
+import React from "react";
+import "../App.css";
 
 function Welcome() {
-    return (<div className="root">
+  return (
+    <div className="root">
       <h1 className="welcome-text">Shopping Cart</h1>
-  </div>)
+    </div>
+  );
 }
 
-export default Welcome
+export default Welcome;

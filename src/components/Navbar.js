@@ -1,21 +1,22 @@
-import React, { useState } from "react"
-import { Link, useLocation } from "react-router-dom"
-import "../App.css"
+import { ShoppingCartOutlined } from "@ant-design/icons";
+import React, { useState } from "react";
+import { Link, useLocation } from "react-router-dom";
+import "../App.css";
 
 function NavBar({ cartItemsQty }) {
-  const [navbar, setNavbar] = useState(false)
-  const { pathname } = useLocation()
-  const isHome = pathname === "/"
+  const [navbar, setNavbar] = useState(false);
+  const { pathname } = useLocation();
+  const isHome = pathname === "/";
 
   const changeBackground = () => {
     if (window.scrollY >= 80) {
-      setNavbar(true)
+      setNavbar(true);
     } else {
-      setNavbar(false)
+      setNavbar(false);
     }
-  }
+  };
 
-  window.addEventListener("scroll", changeBackground)
+  window.addEventListener("scroll", changeBackground);
 
   return (
     <nav
@@ -25,12 +26,14 @@ function NavBar({ cartItemsQty }) {
     >
       <Link to="/">Welcome</Link>
       <Link to="/shop">Shop</Link>
-      <Link to="/cart" id="fas fa-shopping-cart navbarText">
-        <i class="fas fa-shopping-cart"></i>
-        {cartItemsQty}
+      <Link to="/cart">
+        <div className="shopping-cart-counter">
+          <ShoppingCartOutlined />
+          {cartItemsQty}
+        </div>
       </Link>
     </nav>
-  )
+  );
 }
 
-export default NavBar
+export default NavBar;
