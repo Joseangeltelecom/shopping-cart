@@ -8,6 +8,7 @@ import ItemDetails from "./components/ItemDetails";
 import seedItems from "./data/seeItems";
 import NavBar from "./components/Navbar";
 import ComingSoon from "./components/ComingSoon";
+import Welcome from "./components/Welcome";
 
 function App() {
   const [cartItems, setCartItems] = useState([]);
@@ -54,7 +55,9 @@ function App() {
         <div className="App">
           <NavBar cartItemsQty={cartItemsQty} />
           <Switch>
-            <Route exact path="/" component={welcome} />
+            <Route exact path="/shopping-cart/">
+              <Welcome />
+            </Route>
 
             <Route exact path="/shop">
               <Shop items={seedItems} />
