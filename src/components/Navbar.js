@@ -24,7 +24,7 @@ function NavBar({ cartItemsQty }) {
         navbar ? "navBar active" : "navBar"
       } ${navbar ? "navBar-text active" : "navBar-text"} `}
     >
-      <Link to="/">Welcome</Link>
+      <Link to="/shopping-cart/">Welcome</Link>
       <Link to="/shop">Shop</Link>
       <Link to="/cart">
         <div className="shopping-cart-counter">
