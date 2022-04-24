@@ -10,7 +10,7 @@ function ItemDetails({ addCartItem }) {
 
   const handleAdd = () => {
     setShowCompleteOrder(true);
-    addCartItem(itemId[0]);
+    addCartItem(itemId[0])
   };
 
   const itemId = seedItems.filter((item) => item.id === id);
