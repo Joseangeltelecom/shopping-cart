@@ -23,7 +23,7 @@ function Cart({ items, deleteCartItem, changeQty }) {
   return (
     <div className="containerMayor">
       {items.length > 0 ? (
-        <div className="container cartDetails">
+        <div className="container cartDetails mr-2">
           <div className="row">
             <div className="cart-grid">{cartItems}</div>
           </div>

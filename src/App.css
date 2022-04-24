@@ -100,20 +100,16 @@ nav :link {
   margin-top: 5rem;
 }
 
-.cartDetails {
-  margin-top: 3rem;
-}
-
 .cart-grid {
-  display: grid;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
   justify-items: center;
   align-items: center;
   align-content: center;
   height: 100%;
   width: 60%;
-  grid-template-columns: repeat(3, 33.33%);
-  grid-auto-rows: auto-fit;
-  row-gap: 3.5rem;
   padding-top: 3rem;
   padding-bottom: 8rem;
 }
