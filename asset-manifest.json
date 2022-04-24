@@ -1,24 +1,24 @@
 {
   "files": {
-    "main.css": "/shopping-cart/static/css/main.ed03bcf8.chunk.css",
-    "main.js": "/shopping-cart/static/js/main.5a24ad3f.chunk.js",
-    "main.js.map": "/shopping-cart/static/js/main.5a24ad3f.chunk.js.map",
-    "runtime-main.js": "/shopping-cart/static/js/runtime-main.8fe60f94.js",
-    "runtime-main.js.map": "/shopping-cart/static/js/runtime-main.8fe60f94.js.map",
-    "static/css/2.7827dc58.chunk.css": "/shopping-cart/static/css/2.7827dc58.chunk.css",
-    "static/js/2.9806e5d1.chunk.js": "/shopping-cart/static/js/2.9806e5d1.chunk.js",
-    "static/js/2.9806e5d1.chunk.js.map": "/shopping-cart/static/js/2.9806e5d1.chunk.js.map",
+    "main.css": "/shopping-cart/static/css/main.a0469ebc.chunk.css",
+    "main.js": "/shopping-cart/static/js/main.3721ca27.chunk.js",
+    "main.js.map": "/shopping-cart/static/js/main.3721ca27.chunk.js.map",
+    "runtime-main.js": "/shopping-cart/static/js/runtime-main.f56a8de0.js",
+    "runtime-main.js.map": "/shopping-cart/static/js/runtime-main.f56a8de0.js.map",
+    "static/css/2.a6244ede.chunk.css": "/shopping-cart/static/css/2.a6244ede.chunk.css",
+    "static/js/2.1bfb5b22.chunk.js": "/shopping-cart/static/js/2.1bfb5b22.chunk.js",
+    "static/js/2.1bfb5b22.chunk.js.map": "/shopping-cart/static/js/2.1bfb5b22.chunk.js.map",
     "index.html": "/shopping-cart/index.html",
-    "static/css/2.7827dc58.chunk.css.map": "/shopping-cart/static/css/2.7827dc58.chunk.css.map",
-    "static/css/main.ed03bcf8.chunk.css.map": "/shopping-cart/static/css/main.ed03bcf8.chunk.css.map",
-    "static/js/2.9806e5d1.chunk.js.LICENSE.txt": "/shopping-cart/static/js/2.9806e5d1.chunk.js.LICENSE.txt",
+    "static/css/2.a6244ede.chunk.css.map": "/shopping-cart/static/css/2.a6244ede.chunk.css.map",
+    "static/css/main.a0469ebc.chunk.css.map": "/shopping-cart/static/css/main.a0469ebc.chunk.css.map",
+    "static/js/2.1bfb5b22.chunk.js.LICENSE.txt": "/shopping-cart/static/js/2.1bfb5b22.chunk.js.LICENSE.txt",
     "static/media/comingSoonImg.d0277af6.png": "/shopping-cart/static/media/comingSoonImg.d0277af6.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.8fe60f94.js",
-    "static/css/2.7827dc58.chunk.css",
-    "static/js/2.9806e5d1.chunk.js",
-    "static/css/main.ed03bcf8.chunk.css",
-    "static/js/main.5a24ad3f.chunk.js"
+    "static/js/runtime-main.f56a8de0.js",
+    "static/css/2.a6244ede.chunk.css",
+    "static/js/2.1bfb5b22.chunk.js",
+    "static/css/main.a0469ebc.chunk.css",
+    "static/js/main.3721ca27.chunk.js"
   ]
 }
