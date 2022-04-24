@@ -1,7 +1,5 @@
 import React, { useState } from "react";
 import "./App.css";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import welcome from "./components/Welcome";
 import Shop from "./components/Shop";
 import Cart from "./components/Cart";
 import ItemDetails from "./components/ItemDetails";
@@ -9,6 +7,7 @@ import seedItems from "./data/seeItems";
 import NavBar from "./components/Navbar";
 import ComingSoon from "./components/ComingSoon";
 import Welcome from "./components/Welcome";
+import { Route, Routes } from "react-router-dom";
 
 function App() {
   const [cartItems, setCartItems] = useState([]);
@@ -43,50 +42,34 @@ function App() {
     );
   };
 
-  const findItem = (id) => seedItems.find((item) => item.id === id);
-
   const cartItemsQty = cartItems.reduce((acc, cur) => acc + cur.qty, 0);
 
-  /*   className={`${navbar ? "navBar active" : "navBar"}`} */
-
   return (
-    <Router basename="/">
-      <React.Fragment>
-        <div className="App">
-          <NavBar cartItemsQty={cartItemsQty} />
-          <Switch>
-            <Route exact path="/shopping-cart/">
-              <Welcome />
-            </Route>
+    <>
+      <NavBar cartItemsQty={cartItemsQty} />
+      <Routes>
+        <Route path="/" element={<Welcome />} />
+        <Route path="/shop" element={<Shop items={seedItems} />} />
 
-            <Route exact path="/shop">
-              <Shop items={seedItems} />
-            </Route>
+        <Route
+          path="/shop/:id"
+          element={<ItemDetails addCartItem={addCartItem} />}
+        />
 
-            <Route
-              exact
-              path="/shop/:id"
-              render={(routeProps) => (
-                <ItemDetails
-                  item={findItem(routeProps.match.params.id)}
-                  addCartItem={addCartItem}
-                />
-              )}
+        <Route
+          path="/cart"
+          element={
+            <Cart
+              items={cartItems}
+              deleteCartItem={deleteCartItem}
+              changeQty={changeQty}
             />
-            <Route exact path="/cart">
-              <Cart
-                items={cartItems}
-                deleteCartItem={deleteCartItem}
-                changeQty={changeQty}
-              />
-            </Route>
-            <Route exact path="/coming-soon">
-              <ComingSoon />
-            </Route>
-          </Switch>
-        </div>
-      </React.Fragment>
-    </Router>
+          }
+        />
+        <Route path="/coming-soon" element={<ComingSoon />} />
+        <Route path="*" element={<div>Eror 404 resource not found</div>} />
+      </Routes>
+    </>
   );
 }
 

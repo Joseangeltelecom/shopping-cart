@@ -1,6 +1,6 @@
-import React from "react"
-import { Link } from "react-router-dom"
-import "../App.css"
+import React from "react";
+import { Link } from "react-router-dom";
+import "../App.css";
 
 function Item({ id, title, price, imageId }) {
   return (
@@ -22,14 +22,7 @@ function Item({ id, title, price, imageId }) {
         <p className="card-text text-white">${price}</p>
       </div>
     </div>
-  )
+  );
 }
 
-/* Card.propTypes = {
-  title: PropTypes.string.isRequired,
-  url: PropTypes.string,
-  imageSource: PropTypes.string,
-  text: PropTypes.string,
-} */
-
-export default Item
+export default Item;

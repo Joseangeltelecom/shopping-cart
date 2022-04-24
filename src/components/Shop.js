@@ -1,9 +1,6 @@
-import React from 'react'
-import Item from './Item'
-import "../App.css"
-
-/* const findItem = (id) => seedItems.find((item) => item.id === id) */
-
+import React from "react";
+import Item from "./Item";
+import "../App.css";
 
 function Shop({ items }) {
   return (
@@ -21,7 +18,7 @@ function Shop({ items }) {
         ))}
       </div>
     </div>
-  )
+  );
 }
 
-export default Shop
+export default Shop;

@@ -1,10 +1,11 @@
 import React from "react";
-import { Link, useHistory } from "react-router-dom";
+import { Link, useNavigate, useParams } from "react-router-dom";
 import CartDetails from "./CartDetails";
 import "../App.css";
 
 function Cart({ items, deleteCartItem, changeQty }) {
-  const { goBack } = useHistory();
+  let navigate = useNavigate();
+  const { id } = useParams();
   const cartItems = items.map((item) => (
     <CartDetails
       key={item.id}
@@ -30,7 +31,7 @@ function Cart({ items, deleteCartItem, changeQty }) {
           <div className="total-section">
             <button
               className="btn btn-outline-secondary rounded-0 mt-3 px-5 "
-              onClick={goBack}
+              onClick={() => navigate("/shop")}
             >
               Go Back
             </button>

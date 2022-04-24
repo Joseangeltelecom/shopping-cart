@@ -1,4 +1,3 @@
-
 const seedItems = [
   {
     id: "bird-1",
@@ -84,8 +83,6 @@ const seedItems = [
     qty: 1,
     price: 55.9,
   },
-]
+];
 
-
-
-export default seedItems
+export default seedItems;
